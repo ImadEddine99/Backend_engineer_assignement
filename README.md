@@ -8,6 +8,8 @@ This is a simple RESTful API for an e-commerce platform to retrieve products fil
 - MongoDB with Mongoose
 
 =======================   How to Run the Project:
+
+
 1. Clone the repository:
    git clone https://bitbucket.org/ecommerce-assignment/ecommerce.git
    cd ecommerce
@@ -24,6 +26,8 @@ This is a simple RESTful API for an e-commerce platform to retrieve products fil
 The server will run on http://localhost:4000 or http://localhost:4001 if 4000 is used
 
 =======================   API Endpoint:
+
+
 GET /api/products/category/:category (route in ecommerce\api\routes\productRoute.js)
 
 
@@ -35,6 +39,8 @@ This endpoint returns all products within a specific category.
 curl http://localhost:4000/api/products/category/Apparel
 
 =======================   Example successful response:
+
+
 {
   "success": true,
   "filteredProducts": [
@@ -51,12 +57,16 @@ curl http://localhost:4000/api/products/category/Apparel
 }
 
 =======================   Example error response (if no products found):
+
+
 {
   "success": false,
   "message": "No products found in this category"
 }
 
 =======================   Notes:
+
+
 - The newly added API endpoint : GET /products/category/:category to filter products by the 'category' field
 - If no matching products are found, it returns a 404 error.
 - Make sure your database has products with valid 'category' values (e.g., Apparel, Electronics).
