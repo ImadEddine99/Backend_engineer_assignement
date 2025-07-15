@@ -310,16 +310,3 @@ exports.deleteReview = asyncErrorHandler(async (req, res, next) => {
         success: true,
     });
 });
-
-// Get Products by category
-exports.getProductsByCategory = asyncErrorHandler(async (req, res, next) => {
-    const categoryFilter=req.params.category
-    const filteredProducts = await Product.find({category:categoryFilter});
-    if (filteredProducts.length === 0) {
-        return next(new ErrorHandler("No products found in this category", 404));
-    }
-    res.status(200).json({
-        success: true,
-        filteredProducts,
-    });
-});
