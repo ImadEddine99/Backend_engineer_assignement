@@ -35,6 +35,7 @@ The server will run on http://localhost:4000 or http://localhost:4001 if 4000 is
 This endpoint returns all products within a specific category.
 
 =======================   Example request using curl:
+
 curl http://localhost:4000/api/products/category/Apparel
 
 =======================   Example successful response:
