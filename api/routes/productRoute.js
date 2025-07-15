@@ -23,5 +23,7 @@ router.route('/admin/reviews')
     .get(getProductReviews)
     .delete(isAuthenticatedUser, deleteReview);
 
-
+    
+// Get Products by category
+router.get('/products/category/:category', getProductsByCategory);
 module.exports = router;
