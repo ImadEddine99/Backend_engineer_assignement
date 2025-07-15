@@ -29,6 +29,7 @@ The server will run on http://localhost:4000 or http://localhost:4001 if 4000 is
 
 
 *****GET /api/products/category/:category (route in ecommerce\api\routes\productRoute.js)
+
 *****function "getProductsByCategory" in api\controllers\productController.js
 
 This endpoint returns all products within a specific category.
